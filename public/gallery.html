@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Gallery | Masott Klassics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/images/logo.png" alt="Masott Klassics Logo" class="logo">
+            <h1>Masott Klassics</h1>
+        </div>
+        <nav>
+            <a href="/" id="contact-link">Contact Us</a>
+            <a href="/gallery">Design Gallery</a>
+            <a href="/admin">Admin</a>
+        </nav>
+    </header>
+
+    <main class="gallery-page">
+        <h3 class="page-title">Explore our Gallery of various Quality Designs.
+            Grab your  Favorite Design with just a Click! </h3>
+        <div id="gallery-grid" class="gallery-grid">
+            <!-- Designs injected here via JS -->
+        </div>
+    </main>
+
+
+
+    <!-- Lightbox Modal -->
+ <!-- Lightbox Modal (Updated for Large Single View) -->
+<div id="design-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modal-title">Design Name</h3>
+        
+        <div class="carousel-container">
+            <!-- Previous Button -->
+            <button id="prev-btn" class="nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <!-- Single Large Image -->
+            <img id="modal-main-img" src="" alt="Design View">
+            
+            <!-- Next Button -->
+            <button id="next-btn" class="nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <!-- Image Counter (e.g., 1 / 4) -->
+            <div id="image-counter"></div>
+        </div>
+
+        <a id="whatsapp-btn" class="btn whatsapp-btn" href="#" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> I want this design
+        </a>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2023 Masott Klassics. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/gallery.js"></script>
+</body>
+</html>
